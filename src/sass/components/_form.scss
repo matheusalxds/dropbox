@@ -1,0 +1,46 @@
+$form-icon-width: 12.5px;
+.form {
+  display: inline-block;
+  &__search {
+    overflow: hidden;
+    border: 1px solid rgba($color-black, .2);
+    border-radius: 25px;
+    width: 100%;
+    padding: 6px 13px;
+  }
+
+  &__icon {
+    width: $form-icon-width;
+    img {
+      width: inherit;
+      height: inherit;
+    }
+
+    button {
+      background-color: transparent;
+    }
+  }
+
+  &__field {
+    display: inline-block;
+    padding-left: 10px;
+    width: calc(100% - #{$form-icon-width});
+  }
+
+  &__input {
+    border: none;
+    width: 172px;
+    outline: none;
+
+    transition: width .1s ease-in-out;
+
+    &:focus {
+      width: 430px;
+    }
+
+    &:placeholder-shown {
+      font-size: 14px;
+    }
+
+  }
+}

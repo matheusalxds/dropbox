@@ -1,0 +1,23 @@
+
+.dashboard {
+  position: relative;
+
+  &__nav-primary {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: $nav-primary-height;
+    min-width: 240px;
+  }
+
+  &__content {
+    min-height: 100vh;
+    padding-left: $nav-primary-height;
+  }
+
+  &__nav-secondary {
+    position: fixed;
+  }
+}
