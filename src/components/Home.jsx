@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import Upload from './Upload';
+
 export default class Home extends Component {
   render() {
     return (
@@ -28,19 +30,19 @@ export default class Home extends Component {
           <img src="icon-bell.png"/>
         </div>
         <div className="content__header--user">
-            <img src="elton-john.jpg"/>
+          <img src="elton-john.jpg"/>
         </div>
       </div>
-      {/* BODY */}
+      { /* BODY */ }
       <div className="content__body">
         <div className="content__body--main content__body--item">
-          <div className={'heading-quaternary'}>Starred</div>
-          <div className={'content__body--text'}>When you star items, they’ll show up here for easy access. Learn more</div>
+          <div className={ 'heading-quaternary' }>Starred</div>
+          <div className={ 'content__body--text' }>When you star items, they’ll show up here for easy access. Learn
+            more
+          </div>
         </div>
         <div className="content__body--nav-secondary">
-          <button className={'btn'}>
-            Upload
-          </button>
+          <Upload/>
         </div>
       </div>
     </div>
