@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import Upload from './Upload';
+
 export default class Home extends Component {
   render() {
     return (
@@ -12,7 +14,7 @@ export default class Home extends Component {
           <form className={ 'form' }>
             <div className={ 'form__search' }>
             <span className="form__icon">
-              <img src="icon-magnifier.png"/>
+              <img src="icon-magnifier.png" alt={'magnifier'}/>
             </span>
               <span className="form__field">
               <input
@@ -25,22 +27,22 @@ export default class Home extends Component {
           </form>
         </div>
         <div className="content__header--icons">
-          <img src="icon-bell.png"/>
+          <img src="icon-bell.png" alt={'bell'}/>
         </div>
         <div className="content__header--user">
-            <img src="elton-john.jpg"/>
+          <img src="elton-john.jpg" alt={'elton jonh'}/>
         </div>
       </div>
-      {/* BODY */}
+      { /* BODY */ }
       <div className="content__body">
         <div className="content__body--main content__body--item">
-          <div className={'heading-quaternary'}>Starred</div>
-          <div className={'content__body--text'}>When you star items, they’ll show up here for easy access. Learn more</div>
+          <div className={ 'heading-quaternary' }>Starred</div>
+          <div className={ 'content__body--text' }>When you star items, they’ll show up here for easy access. Learn
+            more
+          </div>
         </div>
         <div className="content__body--nav-secondary">
-          <button className={'btn'}>
-            Upload
-          </button>
+          <Upload/>
         </div>
       </div>
     </div>
