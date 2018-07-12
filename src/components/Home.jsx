@@ -31,13 +31,16 @@ export default class Home extends Component {
             <img src="elton-john.jpg"/>
         </div>
       </div>
+      {/* BODY */}
       <div className="content__body">
-        <div className="content__body--main">
+        <div className="content__body--main content__body--item">
           <div className={'heading-quaternary'}>Starred</div>
           <div className={'content__body--text'}>When you star items, they’ll show up here for easy access. Learn more</div>
         </div>
         <div className="content__body--nav-secondary">
-          Nav
+          <button className={'btn'}>
+            Upload
+          </button>
         </div>
       </div>
     </div>

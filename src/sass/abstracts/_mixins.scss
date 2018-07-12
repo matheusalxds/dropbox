@@ -1,0 +1,8 @@
+@mixin imgConfig {
+  img {
+    margin-left: $content-margin-left;
+    border-radius: 50%;
+    width: 30px;
+    height: auto;
+  }
+}
