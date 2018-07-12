@@ -14,7 +14,7 @@ export default class Home extends Component {
           <form className={ 'form' }>
             <div className={ 'form__search' }>
             <span className="form__icon">
-              <img src="icon-magnifier.png"/>
+              <img src="icon-magnifier.png" alt={'magnifier'}/>
             </span>
               <span className="form__field">
               <input
@@ -27,10 +27,10 @@ export default class Home extends Component {
           </form>
         </div>
         <div className="content__header--icons">
-          <img src="icon-bell.png"/>
+          <img src="icon-bell.png" alt={'bell'}/>
         </div>
         <div className="content__header--user">
-          <img src="elton-john.jpg"/>
+          <img src="elton-john.jpg" alt={'elton jonh'}/>
         </div>
       </div>
       { /* BODY */ }

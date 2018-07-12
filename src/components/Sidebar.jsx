@@ -8,7 +8,7 @@ export default class Sidebar extends Component {
         <div className="sidebar__container">
           <div className={ 'sidebar__content' }>
             <div className="sidebar__icon">
-              <img src="icon-dropbox.png "/>
+              <img src="icon-dropbox.png " alt={'dropbox'}/>
             </div>
             <ul className="sidebar__list">
               <li className="sidebar__item">
