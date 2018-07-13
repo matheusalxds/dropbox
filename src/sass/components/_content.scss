@@ -1,4 +1,4 @@
-$content-margin-top: 25px;
+$content-margin-top: 27px;
 .content {
   display: flex;
   flex-direction: column;
@@ -21,10 +21,16 @@ $content-margin-top: 25px;
     &--search {}
 
     &--icons {
+      img {
+        border-radius: 50%;
+      }
       @include imgConfig;
     }
 
     &--user {
+      img {
+        border-radius: 50%;
+      }
       @include imgConfig;
     }
   }
@@ -33,7 +39,7 @@ $content-margin-top: 25px;
     height: 100%;
     display: flex;
     flex-direction: row;
-    margin-top: 30px;
+    margin-top: 32px;
 
     font-size: $font-size-small;
     font-weight: normal;
@@ -46,12 +52,12 @@ $content-margin-top: 25px;
     &--main {
       display: flex;
       flex-direction: column;
-      flex: 4.35;
+      flex: 4.5;
     }
 
     &--nav-secondary {
       flex: 1;
-      padding-top: $content-margin-top;
+      margin-top: calc(#{$content-margin-top} - 1px);
     }
 
     &--text {
@@ -60,5 +66,4 @@ $content-margin-top: 25px;
       font-size: $font-size-medium;
     }
   }
-
 }

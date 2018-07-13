@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import SidebarPrimary from './components/Sidebar';
-import Content from './components/Content';
+import SidebarPrimary from './components/pages/layout/Sidebar';
+import Content from './components/pages/layout/Content';
 
 class App extends Component {
   render() {

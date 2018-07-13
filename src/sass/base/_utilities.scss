@@ -1,7 +1,9 @@
-.u-float-right {
-  float: right !important;
-}
+// Float
+.u-float-right { float: right !important; }
+.u-float-left { float: left !important; }
 
-.u-float-left {
-  float: left !important;
-}
+// Margin
+.u-margin-left { margin-left: 18px !important; }
+.u-margin-left-small { margin-left: 5px !important; }
+
+.u-margin-right { margin-right: 18px !important; }
