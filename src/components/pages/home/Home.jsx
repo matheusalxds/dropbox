@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Upload from '../../common/Upload';
-import Table from '../../common/Table';
+import List from '../../common/List';
 import data from './__mock.home';
 
 export default class Home extends Component {
@@ -44,7 +44,7 @@ export default class Home extends Component {
           </div>
           <div className={'wrapper__list'}>
               Recent
-            <Table
+            <List
               data={data}
             />
           </div>

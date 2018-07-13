@@ -39,7 +39,7 @@ $content-margin-top: 27px;
     height: 100%;
     display: flex;
     flex-direction: row;
-    margin-top: 33px;
+    margin-top: 32px;
 
     font-size: $font-size-small;
     font-weight: normal;
@@ -52,12 +52,12 @@ $content-margin-top: 27px;
     &--main {
       display: flex;
       flex-direction: column;
-      flex: 4.35;
+      flex: 4.5;
     }
 
     &--nav-secondary {
       flex: 1;
-      margin-top: calc(#{$content-margin-top} - 2px);
+      margin-top: calc(#{$content-margin-top} - 1px);
     }
 
     &--text {
