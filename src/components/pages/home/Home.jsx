@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Upload from '../../common/Upload';
 import Table from '../../common/Table';
-import data from '../../__mock.home';
+import data from './__mock.home';
 
 export default class Home extends Component {
   render() {
@@ -42,7 +42,7 @@ export default class Home extends Component {
           <div className={ 'content__body--text' }>When you star items, they’ll show up here for easy access. Learn
             more
           </div>
-          <div className={'wrapper__table'}>
+          <div className={'wrapper__list'}>
               Recent
             <Table
               data={data}

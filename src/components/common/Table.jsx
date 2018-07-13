@@ -9,6 +9,7 @@ export default class Table extends Component {
     <div className="list__info">
       <div className="list__info--item list__info--title ">{ item.title }</div>
       <div className="list__info--item">{ item.subTitle }</div>
+
     </div>
     <div className="list__btn">
       ...
