@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
-import Upload from './Upload';
+import Upload from '../../common/Upload';
+import Table from '../../common/Table';
+import data from '../../__mock.home';
 
 export default class Home extends Component {
   render() {
@@ -14,7 +16,7 @@ export default class Home extends Component {
           <form className={ 'form' }>
             <div className={ 'form__search' }>
             <span className="form__icon">
-              <img src="icon-magnifier.png" alt={'magnifier'}/>
+              <img src="icon-magnifier.png" alt={ 'magnifier' }/>
             </span>
               <span className="form__field">
               <input
@@ -27,10 +29,10 @@ export default class Home extends Component {
           </form>
         </div>
         <div className="content__header--icons">
-          <img src="icon-bell.png" alt={'bell'}/>
+          <img src="icon-bell.png" alt={ 'bell' }/>
         </div>
         <div className="content__header--user">
-          <img src="elton-john.jpg" alt={'elton jonh'}/>
+          <img src="elton-john.jpg" alt={ 'elton jonh' }/>
         </div>
       </div>
       { /* BODY */ }
@@ -39,6 +41,12 @@ export default class Home extends Component {
           <div className={ 'heading-quaternary' }>Starred</div>
           <div className={ 'content__body--text' }>When you star items, they’ll show up here for easy access. Learn
             more
+          </div>
+          <div className={'wrapper__table'}>
+              Recent
+            <Table
+              data={data}
+            />
           </div>
         </div>
         <div className="content__body--nav-secondary">

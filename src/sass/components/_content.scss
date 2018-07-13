@@ -21,10 +21,16 @@ $content-margin-top: 25px;
     &--search {}
 
     &--icons {
+      img {
+        border-radius: 50%;
+      }
       @include imgConfig;
     }
 
     &--user {
+      img {
+        border-radius: 50%;
+      }
       @include imgConfig;
     }
   }
@@ -60,5 +66,4 @@ $content-margin-top: 25px;
       font-size: $font-size-medium;
     }
   }
-
 }

@@ -3,8 +3,8 @@ import { Route, IndexRedirect } from 'react-router';
 
 import App from './App';
 
-import Home from './components/Home';
-import Files from './components/Files';
+import Home from './components/pages/home/Home';
+import Files from './components/pages/files/Files';
 
 export default (
 <Route component={ App }>
