@@ -15,7 +15,9 @@ export default class ContentBody extends Component {
 
   renderList = (data) => (
   <div className={ 'wrapper__list' }>
-    Recent
+    <span className="wrapper__text">
+      Recent
+    </span>
     <List
     data={ data }
     />
@@ -28,6 +30,7 @@ export default class ContentBody extends Component {
     <div className="content__body">
       <div className="content__body--main content__body--item">
         { heading ? this.renderHeading(heading) : null }
+        <span className={'line'}/>
         { text ? this.renderText(text) : null }
         { data ? this.renderList(data) : null }
       </div>

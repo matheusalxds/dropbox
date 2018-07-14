@@ -5,6 +5,9 @@
   &__nav-primary {
     width: $nav-primary-height;
     height: 100%;
+    @include respond(phone) {
+      display: none;
+    }
   }
 
   &__content {
