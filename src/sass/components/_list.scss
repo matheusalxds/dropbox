@@ -92,4 +92,10 @@
   &__list {
     padding-top: 62px;
   }
+
+  &__text {
+    @include respond(tab-port) {
+      padding: $padding-tab-port;
+    }
+  }
 }

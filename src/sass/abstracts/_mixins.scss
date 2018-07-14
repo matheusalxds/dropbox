@@ -1,8 +1,16 @@
 @mixin imgConfig {
   img {
     margin-left: $content-margin-left;
-
     width: 30px;
     height: auto;
+  }
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 600px) { @content } // 600px
+  }
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 900px) { @content } // 900px
   }
 }

@@ -1,12 +1,17 @@
 $form-icon-width: 12.5px;
 .form {
-  display: inline-block;
+  display: flex;
+  justify-content: flex-end;
   &__search {
     overflow: hidden;
     border: 1px solid rgba($color-black, .2);
     border-radius: 25px;
     width: 100%;
     padding: 6px 13px;
+
+    @include respond(tab-port) {
+      width: 50%;
+    }
   }
 
   &__icon {

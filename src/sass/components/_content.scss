@@ -1,11 +1,15 @@
-$content-margin-top: 27px;
+
 .content {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
 
-  padding: 40px 40px 0px 40px ;
+  padding: 40px 40px 0px 40px;
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
 
   &__header {
     display: flex;
@@ -18,7 +22,9 @@ $content-margin-top: 27px;
       flex-grow: 10;
     }
 
-    &--search {}
+    &--search {
+      flex-basis: auto;
+    }
 
     &--icons {
       img {
@@ -33,6 +39,11 @@ $content-margin-top: 27px;
       }
       @include imgConfig;
     }
+
+    @include respond(tab-port) {
+      padding: 10px 20px;
+    }
+
   }
 
   &__body {
@@ -47,6 +58,9 @@ $content-margin-top: 27px;
 
     &--item {
       margin-right: 35px;
+      @include respond(tab-port) {
+        margin-right: 0;
+      }
     }
 
     &--main {
@@ -58,12 +72,19 @@ $content-margin-top: 27px;
     &--nav-secondary {
       flex: 1;
       margin-top: calc(#{$content-margin-top} - 1px);
+
+      @include respond(tab-port) {
+        display: none;
+      }
     }
 
     &--text {
       margin-top: $content-margin-top;
       margin-right: 30px;
       font-size: $font-size-medium;
+      @include respond(tab-port) {
+        padding: 0 0 0 $padding-tab-port ;
+      }
     }
   }
 }

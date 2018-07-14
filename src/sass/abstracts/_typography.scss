@@ -13,12 +13,8 @@ body {
   font-size: $font-size-small;
   color: $color-grey-dark;
 
-  &::after {
-    content: '';
-    padding-bottom: 14px;
-    display: block;
-    width: 100%;
-    border-bottom: solid 1px rgba($color-grey-dark, .2);
+  @include respond(tab-port) {
+    padding: 0 0 0 $padding-tab-port ;
   }
 }
 
