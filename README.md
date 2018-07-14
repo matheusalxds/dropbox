@@ -1,5 +1,5 @@
-### Recorte de layout - dropbox
-https://www.dropbox.com/h<br>
+###
+Recorte de layout baseado no dropbox    <br>
 Foco do projeto foi em utilizar apenas html/css e react para
 componentizar os principais componentes do projeto.
 
@@ -29,3 +29,7 @@ Utilizado para desenvolvimento
    ├── react-files
    └── node-sass
 ```
+
+
+Referência:
+ <https://www.dropbox.com/h> Acesso em: 2018 jul. 2018.
