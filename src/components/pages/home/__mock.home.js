@@ -1,6 +1,6 @@
 const data = [
   {
-    title: 'Get Started with Dropbox Paper.url',
+    title: 'Get Started with Dropbox Papers.url',
     subTitle: 'Opened 6 hrs ago . Dropbox',
   },
   {

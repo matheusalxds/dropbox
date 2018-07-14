@@ -5,8 +5,8 @@ export default class Content extends Component {
     const { children } = this.props;
     return (
     <div className={ 'dashboard__content' }>
-        { children }
-      </div>
+      { children }
+    </div>
     )
   }
 }
