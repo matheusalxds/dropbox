@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 
 export default class Sidebar extends Component {
   render() {
-
-    console.log('-->', this.props.router);
-
     return (
     <div className={ 'dashboard__nav-primary' }>
       <div className={ 'sidebar__primary' }>
