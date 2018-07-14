@@ -6,7 +6,7 @@ componentizar os principais componentes do projeto.
 ### Setup
 #### Clonar o repositório
 ```
-git@github.com:matheusalxds/dropbox.git
+    git@github.com:matheusalxds/dropbox.git
 ```
 
 #### Instalar dependências
