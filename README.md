@@ -1,9 +1,31 @@
 ### Recorte de layout - dropbox
-https://www.dropbox.com/h
+https://www.dropbox.com/h<br>
+Foco do projeto foi em utilizar apenas html/css e react para
+componentizar os principais componentes do projeto.
 
-Bibliotecas de suporte:
- - react
- - react-dom
- - react-files
- - react-router
- - node-sass
+### Setup
+#### Clonar o repositório
+```
+git@github.com:matheusalxds/dropbox.git
+```
+
+#### Instalar dependências
+```
+    yarn install
+        ou
+    npm install
+```
+
+#### Rodar o projeto
+```
+    npm start
+```
+
+Utilizado para desenvolvimento
+```
+   ├── react
+   ├── react-dom
+   ├── react-router
+   ├── react-files
+   └── node-sass
+```
