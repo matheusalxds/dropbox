@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
+import data from "./__mock.files";
+import ContentWrapper from '../layout/ContentWrapper'
 
 export default class Files extends Component {
   render() {
     return (
-    <div className="content__header">
-      <div className="heading-secondary">Files</div>
-    </div>
+    <ContentWrapper
+    title={ 'Files' }
+    heading={ "Starred with files" }
+    text={ "When you star items, they’ll show up here for easy access. Learn more" }
+    data={ data }
+    />
     )
   }
 }

@@ -18,6 +18,7 @@
     height: 32px;
     display: inline-block;
     margin-bottom: 37px;
+    cursor: pointer;
 
     img {
       width: inherit;
@@ -37,7 +38,7 @@
 
     a {
       text-decoration: none;
-
+      &,
       &:active,
       &:visited {
         color: $color-grey-dark;
