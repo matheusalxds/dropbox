@@ -4,7 +4,7 @@ import { HOME, loadedHomeData } from '../actions/home';
 
 import Home from '../endpoint/home';
 
-export function* workerHome(status) {
+export function* workerLoadHome(status) {
   try {
     const response = yield call(Home.getHomeData,status);
     if(response) {
@@ -16,16 +16,16 @@ export function* workerHome(status) {
 }
 
 // Watchers
-export function* watchHome() {
+export function* watchLoadHome() {
   yield takeEvery(HOME.LOAD.REQUEST, function* fn(request) {
     try {
       const { payload } = request;
 
-      yield call(workerHome, payload);
+      yield call(workerLoadHome, payload);
     } catch (error) {
       console.error(error);
     }
   });
 }
 
-export default all([ fork(watchHome) ]);
+export default all([ fork(watchLoadHome) ]);

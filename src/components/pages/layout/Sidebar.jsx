@@ -12,22 +12,22 @@ export default class Sidebar extends Component {
             </div>
             <ul className="sidebar__list">
               <li className="sidebar__item">
-                <a href={ '/home' }>
+                <a href={ '/#/home' }>
                   Home
                 </a>
               </li>
               <li className="sidebar__item">
-                <a href={ '/files' }>
+                <a href={ '/#/files' }>
                   Files
                 </a>
               </li>
               <li className="sidebar__item">
-                <a href={ '/paper' }>
+                <a href={ '/#/paper' }>
                   Paper
                 </a>
               </li>
               <li className="sidebar__item">
-                <a href={ '/showcase' }>
+                <a href={ '/#/showcase' }>
                   Showcase
                 </a>
               </li>

@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import ContentWrapper from '../layout/ContentWrapper'
-
 import { loadHomeData } from '../../../store/modules/home/actions/home';
 import { selectData } from '../../../store/modules/home/reducers/home';
 
+import ContentWrapper from '../layout/ContentWrapper'
 import Shimmer from '../../common/Shimmer';
 
 @connect(
@@ -21,7 +20,6 @@ export default class Home extends Component {
 
   render() {
     const { data } = this.props;
-    if (data) console.log('dataaaaaa -->', data);
     return data ? (
     <ContentWrapper
     title={ 'Home' }
