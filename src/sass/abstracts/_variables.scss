@@ -22,17 +22,24 @@ $font-size-big: 20px;
 // DASHBOARD
 $nav-primary-height: 240px;
 
-
 // CONTENT
 $content-header-width: 20%;
 $content-margin-left: 18px;
 $content-margin-top: 27px;
 $content-padding: 40px 40px 0px 40px;
-
+$content-padding-header: 7px;
 
 // BORDER
 $default-border-radius: 4px;
-
+$border-radius-big: 25px;
 
 // TAB-PORT MEDIA QUERY
 $padding-tab-port: 20px;
+
+// FORM
+$form-width: 166px;
+
+// SHIMMER
+$default-shimmer-margin: 15px;
+$shimmer-text-height: 20px;
+$shimmer-text-width: 40px;

@@ -313,7 +313,7 @@ body {
       width: 140px; }
     .shimmer__header--search {
       height: 30px;
-      width: 200px;
+      width: 219.12px;
       border-radius: 25px; }
     .shimmer__header--icons {
       height: 30px;
@@ -364,7 +364,8 @@ body {
       display: flex;
       flex-direction: row;
       align-items: center;
-      padding: 15px 15px; }
+      padding: 15px;
+      flex: 1; }
     .shimmer__body--box {
       height: 40px;
       width: 40px;
@@ -372,6 +373,10 @@ body {
     .shimmer__body--info {
       height: 20px;
       width: 250px; }
+    .shimmer__body--last-item {
+      height: 20px;
+      width: 40px;
+      margin-right: 15px; }
 
 .dashboard {
   display: flex;
