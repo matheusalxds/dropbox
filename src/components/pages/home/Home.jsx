@@ -8,14 +8,18 @@ import { loadHomeData } from '../../../store/modules/home/actions/home';
 import { selectData } from '../../../store/modules/home/reducers/home';
 
 @connect(
-  state => ({
-    data: selectData(state),
-  }),
-  { loadHomeData })
+state => ({
+  data: selectData(state),
+}),
+{ loadHomeData })
 export default class Home extends Component {
-  render() {
 
-    if(this.props.data) console.log('data -->', data);
+  componentDidMount() {
+    this.props.loadHomeData(true);
+  }
+
+  render() {
+    if (this.props.data) console.log('data -->', data);
     return (
     <ContentWrapper
     title={ 'Home' }

@@ -10,7 +10,6 @@ export const HOME = {
   LOAD: createRequestTypes('HOME'),
 };
 
-export const loadHomeData = ({}) => action(HOME.LOAD.REQUEST, {});
+export const loadHomeData = (status) => action(HOME.LOAD.REQUEST, status);
 
-export const loadedHomeData = (data) =>
-action(HOME.LOAD.SUCCESS, { data });
+export const loadedHomeData = (data) => action(HOME.LOAD.SUCCESS, { data });

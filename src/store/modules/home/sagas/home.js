@@ -2,9 +2,10 @@ import { fork, takeEvery, call, put, all } from 'redux-saga/effects';
 
 import { HOME, loadedHomeData } from '../actions/home';
 
-import Home from './home';
+import Home from '../endpoint/home';
 
-export function* workerHome() {
+export function* workerHome(status) {
+  console.log('status', status);
   try {
     const response = yield call(Home.getHomeData);
     console.log('response -->', response);
@@ -19,14 +20,11 @@ export function* watchHome() {
     try {
       const { payload } = request;
 
-      // useless payload
-      console.log('payload', payload);
-
-      yield call(workerHome);
+      yield call(workerHome, payload);
     } catch (error) {
       console.error(error);
     }
   });
 }
 
-export default all([fork(watchHome)]);
+export default all([ fork(watchHome) ]);
