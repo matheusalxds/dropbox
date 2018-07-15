@@ -1,5 +1,5 @@
 ###
-Recorte de layout baseado no dropbox    <br>
+Recorte de layout baseado no site Dropbox    <br>
 Foco do projeto foi em utilizar apenas html/css e react para
 componentizar os principais componentes do projeto.
 
@@ -25,8 +25,11 @@ Utilizado para desenvolvimento
 ```
    ├── react
    ├── react-dom
-   ├── react-router
    ├── react-files
+   ├── react-router
+   ├── redux
+   ├── react-redux
+   ├── redux-saga
    └── node-sass
 ```
 
