@@ -1,4 +1,4 @@
-### Dropbox
+### Fake - Dropbox
 Recorte de layout baseado no site Dropbox    <br>
 Foco do projeto foi em utilizar apenas html/css e react para
 componentizar os principais componentes do projeto.
