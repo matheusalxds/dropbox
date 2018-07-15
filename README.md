@@ -1,7 +1,8 @@
 ### Fake - Dropbox
 Recorte de layout baseado no site Dropbox    <br>
 Foco do projeto foi em utilizar apenas html/css e react para
-componentizar os principais componentes do projeto.
+componentizar os principais componentes do projeto. <br>
+Obs.: Utilizado Shimmer para exercer a função de loading.
 
 ### Setup
 #### Clonar o repositório
