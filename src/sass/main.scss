@@ -1,12 +1,14 @@
 @import "abstracts/variables";
 @import "abstracts/mixins";
-@import "base/utilities";
 @import "abstracts/typography";
+@import "base/animations";
 @import "base/base";
+@import "base/utilities";
 @import "components/button";
 @import "components/content";
 @import "components/form";
 @import "components/list";
 @import "components/line";
 @import "components/sidebar";
+@import "components/shimmer";
 @import "layout/dashboard";
