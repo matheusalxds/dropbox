@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import './App.css';
 
-import SidebarPrimary from './components/pages/layout/Sidebar';
-import Content from './components/pages/layout/Content';
+import SidebarPrimary from '../layout/Sidebar';
+import Content from '../layout/Content';
 
-class App extends Component {
+class Base extends Component {
   render() {
     return(
     <div className={"dashboard"}>
@@ -18,4 +17,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Base;

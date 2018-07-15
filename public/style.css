@@ -97,9 +97,9 @@ body {
       flex-grow: 10; }
     .content__header--search {
       flex-basis: auto; }
-    .content__header--icons img {
+    .content__header--icon img {
       border-radius: 50%; }
-    .content__header--icons img {
+    .content__header--icon img {
       margin-left: 18px;
       width: 30px;
       height: auto; }
