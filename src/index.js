@@ -4,8 +4,8 @@ import { Router, hashHistory } from 'react-router'
 import { Provider } from 'react-redux';
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import logger from 'redux-logger';
-import registerServiceWorker from './registerServiceWorker';
-import Routes from './Routes';
+import registerServiceWorker from './components/pages/base/registerServiceWorker';
+import Routes from './components/pages/base/Routes';
 
 import { reducers, sagas } from './store/modules/index'; // Or wherever you keep your reducers
 

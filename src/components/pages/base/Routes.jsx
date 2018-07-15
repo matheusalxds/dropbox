@@ -1,14 +1,14 @@
 import React from 'react';
 import { Route, IndexRedirect } from 'react-router';
 
-import App from './App';
+import Base from './Base';
 
-import Home from './components/pages/home/Home';
-import Files from './components/pages/files/Files';
-import Papers from './components/pages/papers/Papers';
+import Home from '../home/Home';
+import Files from '../files/Files';
+import Papers from '../papers/Papers';
 
 export default (
-<Route component={ App }>
+<Route component={ Base }>
   <IndexRedirect to="/"/>
   <Route path="/">
     <IndexRedirect to="home"/>
