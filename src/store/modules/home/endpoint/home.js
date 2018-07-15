@@ -1,10 +1,12 @@
 import data from './__mock.home';
 
 export default class Home {
-  static getHomeData() {
-
-    setTimeout(function() { console.log("setTimeout: Ja passou 5 segundo!"); }, 5000);
-
-    return data;
+  static getHomeData(status) {
+    if (status) {
+      return new Promise((resolve) => {
+        setTimeout(() => resolve(data), 3000)
+      })
+    }
+    return null;
   }
 }

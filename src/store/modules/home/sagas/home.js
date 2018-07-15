@@ -5,10 +5,11 @@ import { HOME, loadedHomeData } from '../actions/home';
 import Home from '../endpoint/home';
 
 export function* workerHome(status) {
-  console.log('status', status);
   try {
-    const response = yield call(Home.getHomeData);
-    console.log('response -->', response);
+    const response = yield call(Home.getHomeData,status);
+    if(response) {
+      yield put(loadedHomeData(response));
+    }
   } catch (error) {
     console.error(error);
   }

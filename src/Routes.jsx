@@ -7,6 +7,8 @@ import Home from './components/pages/home/Home';
 import Files from './components/pages/files/Files';
 import Papers from './components/pages/papers/Papers';
 
+import Shimmer from './components/common/Shimmer';
+
 export default (
 <Route component={ App }>
   <IndexRedirect to="/"/>
@@ -15,6 +17,7 @@ export default (
     <Route path="home" component={ Home }/>
     <Route path="files" component={ Files }/>
     <Route path="paper" component={ Papers }/>
+    <Route path="shimmer" component={ Shimmer }/>
   </Route>
 </Route>
 );
