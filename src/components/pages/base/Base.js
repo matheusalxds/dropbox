@@ -7,7 +7,7 @@ class Base extends Component {
   render() {
     return(
     <div className={"dashboard"}>
-      <SidebarPrimary/>
+      <SidebarPrimary />
 
       <Content>
         {this.props.children ? React.cloneElement(this.props.children) : null}

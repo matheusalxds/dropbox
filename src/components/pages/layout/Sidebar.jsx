@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 
+import { Link, withRouter } from 'react-router';
+
+@withRouter
 export default class Sidebar extends Component {
   render() {
+    console.log(this.props);
     return (
     <div className={ 'dashboard__nav-primary' }>
       <div className={ 'sidebar__primary' }>
@@ -12,24 +16,24 @@ export default class Sidebar extends Component {
             </div>
             <ul className="sidebar__list">
               <li className="sidebar__item">
-                <a href={ '/#/home' }>
+                <Link to={ '/home' }>
                   Home
-                </a>
+                </Link>
               </li>
               <li className="sidebar__item">
-                <a href={ '/#/files' }>
+                <Link to={ '/files' }>
                   Files
-                </a>
+                </Link>
               </li>
               <li className="sidebar__item">
-                <a href={ '/#/paper' }>
+                <Link to={ '/paper' }>
                   Paper
-                </a>
+                </Link>
               </li>
               <li className="sidebar__item">
-                <a href={ '/#/showcase' }>
+                <Link to={ '/showcase' }>
                   Showcase
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
