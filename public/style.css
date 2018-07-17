@@ -281,6 +281,10 @@ body {
     text-decoration: none; }
     .sidebar__item a, .sidebar__item a:active, .sidebar__item a:visited {
       color: #637282; }
+  .sidebar__item--active a {
+    text-decoration: none; }
+    .sidebar__item--active a, .sidebar__item--active a:active, .sidebar__item--active a:visited {
+      color: #0070e0; }
 
 .shimmer {
   display: flex;
