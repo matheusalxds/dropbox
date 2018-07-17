@@ -44,5 +44,17 @@
         color: $color-grey-dark;
       }
     }
+
+    &--active {
+      a {
+        text-decoration: none;
+        &,
+        &:active,
+        &:visited {
+          color: $color-primary;
+        }
+      }
+    }
   }
+
 }
