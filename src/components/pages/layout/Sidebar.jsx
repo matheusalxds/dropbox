@@ -11,8 +11,6 @@ export default class Sidebar extends Component {
   }
 
   render() {
-    // Só criar uma função pra testar se a routa corrente é a mesma do link, se for mostrar uma classe x do css
-    console.log('props', this.props);
     return (
     <div className={ 'dashboard__nav-primary' }>
       <div className={ 'sidebar__primary' }>
